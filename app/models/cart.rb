@@ -1,3 +1,3 @@
-class Cart < ApplicationRecorda
+class Cart < ApplicationRecord
   has_many :teas
 end
