@@ -12,10 +12,9 @@
     %tr
       %td= link_to "#{tea.name}", my_tea_path(tea.id)
       %td= tea.stock
-      %td= "#{tea.price} TL"
+      %td= "#{tea.price.round(2)} TL"
       %td= tea.origin
       %td= tea.size.capitalize
       %td
         %a{ :href => "/add_to_cart/#{tea.id}", :title => "Add To Cart!" } Add To Cart!
-
 = link_to "My Cart", my_cart_path(1)

@@ -1,2 +1,21 @@
-<h1>Teas#show</h1>
-<p>Find me in app/views/teas/show.html.erb</p>
+%h1= @tea.name
+%p
+  %b Stock:
+  = @tea.stock
+%p
+  %b Price:
+  = @tea.price
+%p
+  %b Origin:
+  = @tea.origin
+%p
+  %b Ingredients:
+  = @tea.ingredients
+%p
+  %b Usage
+  = @tea.usage
+%p
+  %b Size
+  = @tea.size
+
+= link_to "Back", root_path
