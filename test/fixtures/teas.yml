@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  stock: MyString
+  price: 1.5
+  origin: MyString
+  ingredients: MyString
+  usage: MyString
+  cart: one
+
+two:
+  name: MyString
+  stock: MyString
+  price: 1.5
+  origin: MyString
+  ingredients: MyString
+  usage: MyString
+  cart: two
