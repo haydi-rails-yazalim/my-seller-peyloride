@@ -16,5 +16,5 @@
       %td= tea.origin
       %td= tea.size.capitalize
       %td
-        %a{ :href => "/add_to_cart/#{tea.id}", :title => "Add To Cart!" } Add To Cart!
+        =link_to "Add To Cart!", add_to_cart_path(tea.id), method: :post
 = link_to "My Cart", my_cart_path(1)

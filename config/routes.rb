@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'teas#index'
 
   get 'teas/:id', to: 'teas#show', as: 'my_tea'
-  get 'add_to_cart/:id', to: 'teas#add_to_cart'
+  post 'add_to_cart/:id', to: 'teas#add_to_cart', as: "add_to_cart"
 
   get 'carts/:id', to: 'carts#show', as: 'my_cart'
 
