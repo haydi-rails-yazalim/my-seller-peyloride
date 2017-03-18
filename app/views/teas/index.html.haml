@@ -1,5 +1,5 @@
 %h1 Tea List
-%table
+%table{:border => 1}
   %tbody
     %tr
       %td Name
@@ -17,3 +17,5 @@
       %td= tea.size.capitalize
       %td
         %a{ :href => "/add_to_cart/#{tea.id}", :title => "Add To Cart!" } Add To Cart!
+
+%a My cart
